@@ -1,0 +1,57 @@
+body {
+  background-color: #050400; 
+  margin: 0; 
+  padding: 0;
+  height: 100vh;
+  overflow: hidden;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.rotating {
+  animation: rotate 1.5s linear infinite;
+  cursor: pointer;
+  backface-visibility: hidden;
+  will-change: transform;
+  transform-origin: center;
+  width: 50px;
+  height: auto;
+}
+
+.loading-container {
+  position: relative;
+  top: 12rem;
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
+
+.loading-text {
+  font-family: 'Lily Script One', cursive;
+  position: relative;
+  color: aliceblue;
+  top: -35rem;
+  left: -44rem;
+  font-size: 3rem; 
+  margin-top: 20px; 
+}
+
+.loading-info {
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+  bottom: 12rem;
+  left: 0rem;
+  color: aliceblue;
+  font-size: 1.2rem; 
+  margin-top: 20px; 
+  cursor: pointer;
+}
