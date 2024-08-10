@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@400;700&display=swap');
+
 body {
   background-color: #050400; 
   margin: 0; 
@@ -21,13 +23,14 @@ body {
   backface-visibility: hidden;
   will-change: transform;
   transform-origin: center;
-  width: 50px;
+  width: 70px;
   height: auto;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); 
 }
 
 .loading-container {
   position: relative;
-  top: 12rem;
+  top: 10rem;
   display: flex;
   flex-direction: column; 
   justify-content: center;
@@ -39,10 +42,15 @@ body {
   font-family: 'Lily Script One', cursive;
   position: relative;
   color: aliceblue;
-  top: -35rem;
-  left: -44rem;
+  top: -40rem;
+  left: -45rem;
   font-size: 3rem; 
   margin-top: 20px; 
+  transition: transform 0.3s ease; 
+}
+
+.loading-text:hover {
+  transform: scale(1.2);
 }
 
 .loading-info {
@@ -54,4 +62,202 @@ body {
   font-size: 1.2rem; 
   margin-top: 20px; 
   cursor: pointer;
+}
+
+.bg-triangle3 {
+  position: relative;
+  top: 5rem;
+  left: 0rem;
+  font-size: 30rem;
+  size: 20rem;
+}
+
+.bg-triangle4 {
+  position: relative;
+  top: 4rem;
+  left: 0rem;
+  font-size: 30rem;
+  size: 20rem;
+}
+
+.home-container {
+  display: flex;
+  height: 100vh;
+}
+
+.left-half {
+  background-color: #392D2D;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.right-half {
+  background-color: white;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.left-rectangle {
+  position: relative;
+  left: 2rem;
+  border: 2px solid white;
+  width: 80%; 
+  height: 50%; 
+}
+
+.right-rectangle {
+  position: relative;
+  left: -8.5rem;
+  border: 2px solid #392D2D; 
+  width: 80%; 
+  height: 50%; 
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-family: Arial, sans-serif;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+a.custom-link {
+  font-family: 'Inknut Antiqua', serif;
+  font-size: 2rem;
+  text-decoration: none;
+  position: absolute;
+}
+
+.about-link {
+  color: aliceblue;
+  top:20rem;
+  left: -2rem;
+  transform: rotate(-90deg);
+}
+
+.about-link:hover {
+  transform: rotate(-90deg) scale(1.5);
+}
+
+.skills-link {
+  color: aliceblue;
+  bottom: 0rem;
+  left: 30rem;
+}
+
+.skills-link:hover {
+  transform: scale(1.5);
+}
+
+.parent-container {
+  position: relative;
+  overflow: hidden; 
+  height: 100vh;
+}
+
+.projects-link {
+  color: #392D2D;
+  position: absolute; 
+  bottom: -10;
+  left: 40rem;
+  transform: rotate(90deg);
+  transform-origin: center; 
+  display: inline-block; 
+  transition: transform 0.3s ease; 
+}
+
+.projects-link:hover {
+  transform: rotate(90deg) scale(1.5); 
+}
+
+
+.resume-link {
+  color: #392D2D;
+  bottom: 0rem;
+  left: 8rem;
+}
+
+.resume-link:hover{
+  transform: scale(1.5);
+}
+
+.bold-text1 {
+  color: aliceblue;
+  font-size: 3rem;
+  margin-left: 1rem;
+}
+
+.bold-text2 {
+  color: aliceblue;
+  font-size: 3rem;
+  margin-left: 1rem;
+}
+
+.light-text {
+  margin-left: 2rem;
+  color: aliceblue;
+  font-size: 1.4rem;
+}
+
+.rectangle-image {
+  position: relative;
+  left: 11rem;
+  bottom: 12.55rem;
+  transition: transform 0.3s ease;
+}
+
+.rectangle-image:hover {
+  transform: scale(1.1);
+}
+
+.text-home {
+  font-family: 'Lily Script One', cursive;
+  position: relative;
+  color: aliceblue;
+  top: -22rem;
+  left: 1rem;
+  font-size: 3rem; 
+  margin-top: 20px; 
+  transition: transform 0.3s ease;
+}
+
+.text-home:hover {
+  transform: scale(1.2);
+}
+
+.top-svg1 {
+  position: relative;
+  top: -20rem;
+  left: 33rem;
+  transition: transform 0.3s ease;
+}
+
+.top-svg2 {
+  position: relative;
+  top: -20rem;
+  left: 36rem;
+  transition: transform 0.3s ease;
+}
+
+.top-svg3 {
+  position: relative;
+  top: -20rem;
+  left: 2rem;
+  transition: transform 0.3s ease;
+}
+
+.top-svg4 {
+  position: relative;
+  top: -20rem;
+  left: 4rem;
+  width: 3.4rem;
+  height: 3.4rem;
+  transition: transform 0.3s ease;
 }
