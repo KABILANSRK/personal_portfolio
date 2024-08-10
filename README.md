@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # personal_portfolio
 =======
 # Portfolio
