@@ -42,20 +42,22 @@ function Home() {
       <div className="right-half">
       <a href="mailto:kabilans.26csb@licet.ac.in" target="_blank" rel="noopener noreferrer">
             <img
-              src={`${process.env.PUBLIC_URL}/assets/email_black.svg`} // Replace with your SVG path
+              src={`${process.env.PUBLIC_URL}/assets/email_black.svg`} 
               alt="Email"
               className="top-svg3"
             />
           </a>
           <a href="https://www.instagram.com/_.kabilan._srk?igsh=MXN1NGtqZjh4bnQxcw==" target="_blank" rel="noopener noreferrer">
             <img
-              src={`${process.env.PUBLIC_URL}/assets/instagram_blackk.svg`} // Replace with your SVG path
+              src={`${process.env.PUBLIC_URL}/assets/instagram_blackk.svg`} 
               alt="Instagram"
               className="top-svg4"
             />
           </a>
         <Link to="/projects" className="custom-link projects-link">PROJECTS</Link>
-        <Link to="/resume" className="custom-link resume-link">RESUME</Link>
+        <a href={`${process.env.PUBLIC_URL}/assets/Kabilan.S_resume.pdf`} target="_blank" rel="noopener noreferrer" className="custom-link resume-link">
+          RESUME
+        </a>
         <div className="right-rectangle">
         <img
             src={`${process.env.PUBLIC_URL}/assets/home.png`}
