@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 function Loading() {
   const navigate = useNavigate();
 
-  const handleClick = () => {
+  const handleClick = () => { 
     navigate('/home');
   };
 
@@ -30,7 +30,7 @@ function Loading() {
         style={{ width: '20rem', height: '50rem' }}
       />
       <div className="loading-text">
-        SK
+        SRK
       </div>
       <div className="loading-info">
         Click here...

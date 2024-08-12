@@ -7,7 +7,7 @@ function Home() {
     <div className="home-container">
       <div className="left-half">
       <div className="text-home">
-        SK
+        SRK
       </div>
       <a href="https://www.linkedin.com/in/kabilansrkk/" target="_blank" rel="noopener noreferrer">
             <img

@@ -5,7 +5,7 @@ function About() {
   return (
     <div className="about-container">
         <div className='about-sk'>
-            SK
+            SRK
         </div>
       <div className="about-rectangle">
         <p className="about-text">
