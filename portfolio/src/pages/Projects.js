@@ -13,14 +13,14 @@ function Skills() {
       <div className="rectangle">
         <div className="image-holder">
           <img 
-            src={`${process.env.PUBLIC_URL}/assets/Biblo_connect_logo.jpg`} 
+            src={`${process.env.PUBLIC_URL}/assets/biblo.jpg`} 
             alt="Project 1"
             className="project-image1" 
           />
         </div>
         <div className="project-desc">
           <h3>&emsp;&emsp;&nbsp;&nbsp;Biblo -&gt; Connect</h3>
-          <p>This project is a web application that allows users to...</p>
+          <p>&emsp;A web app for Book lovers to share their thoughts about the book.</p>
           <a 
             href="https://github.com/team-pattarai/Bibloconnect-App-for-book-lovers.git" 
             target="_blank" 
@@ -42,7 +42,7 @@ function Skills() {
         </div>
         <div className="project-desc">
           <h3>&emsp;&emsp;&nbsp;&nbsp;Campus_Navigator</h3>
-          <p>This project is a mobile app that helps users track...</p>
+          <p>&emsp;A website for easy navigation inside our college campus...</p>
           <a 
             href="https://github.com/KABILANSRK/Campus_Navigator.git" 
             target="_blank" 
@@ -64,7 +64,7 @@ function Skills() {
         </div>
         <div className="project-desc">
           <h3>&nbsp;Multifunctional Telegram Bot</h3>
-          <p>This project is a mobile app that helps users track...</p>
+          <p>&emsp;A MultiFunctional Telegram Bot for multiple tasks...</p>
           <a 
             href="https://github.com/KABILANSRK/Multi-funtional-telegram-bot.git" 
             target="_blank" 

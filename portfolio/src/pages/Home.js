@@ -55,7 +55,7 @@ function Home() {
             />
           </a>
         <Link to="/projects" className="custom-link projects-link">PROJECTS</Link>
-        <a href={`${process.env.PUBLIC_URL}/assets/Kabilan.S_resume.pdf`} target="_blank" rel="noopener noreferrer" className="custom-link resume-link">
+        <a href="https://drive.google.com/file/d/1KjkhDBOwiyGH8MmlwPTVBEnaKx_sNGYb/view?usp=drive_link" target="_blank" rel="noopener noreferrer" className="custom-link resume-link">
           RESUME
         </a>
         <div className="right-rectangle">

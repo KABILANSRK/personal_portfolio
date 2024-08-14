@@ -19,13 +19,21 @@ body {
 
 .rotating {
   animation: rotate 1.5s linear infinite;
+  position: relative;
+  transform: translateY(4rem);
   cursor: pointer;
   backface-visibility: hidden;
   will-change: transform;
   transform-origin: center;
-  width: 70px;
-  height: auto;
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); 
+  width: 5%;
+  height: 5%;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.rotating:hover {
+  animation: rotate 1s linear infinite;
+  transform: translateY(4rem) scale(1.2) rotateY(180deg);
+  transition: transform 0.2s ease;
 }
 
 .loading-container {
@@ -42,8 +50,8 @@ body {
   font-family: 'Lily Script One', cursive;
   position: relative;
   color: aliceblue;
-  top: -40rem;
-  left: -43rem;
+  top: -31rem;
+  left: -44rem;
   font-size: 3rem; 
   margin-top: 20px; 
   transition: transform 0.3s ease; 
@@ -56,7 +64,7 @@ body {
 .loading-info {
   font-family: 'Poppins', sans-serif;
   position: relative;
-  bottom: 12rem;
+  bottom: 6rem;
   left: 0rem;
   color: aliceblue;
   font-size: 1.2rem; 
@@ -66,7 +74,7 @@ body {
 
 .bg-triangle3 {
   position: relative;
-  top: 5rem;
+  top: -1rem;
   left: 0rem;
   font-size: 30rem;
   size: 20rem;
@@ -74,7 +82,7 @@ body {
 
 .bg-triangle4 {
   position: relative;
-  top: 4rem;
+  top: -2rem;
   left: 0rem;
   font-size: 30rem;
   size: 20rem;
@@ -455,7 +463,7 @@ a.custom-link {
   top: 0rem;
   left: 1rem;
   width: 90%;
-  height: 90%;
+  height: 100%;
 }
 
 .project-image2 {

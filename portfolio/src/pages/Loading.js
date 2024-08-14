@@ -23,11 +23,11 @@ function Loading() {
         style={{ width: '10rem', height: '30rem' }}
       />
       <img
-        src={`${process.env.PUBLIC_URL}/assets/loading.svg`}
+        src={`${process.env.PUBLIC_URL}/assets/loading.png`}
         alt="Loading"
         className="rotating"
         onClick={handleClick}
-        style={{ width: '20rem', height: '50rem' }}
+        style={{ width: '10rem', height: '40rem' }}
       />
       <div className="loading-text">
         SRK
