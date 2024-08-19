@@ -217,7 +217,7 @@ a.custom-link {
 .rectangle-image {
   position: relative;
   left: 11rem;
-  bottom: 12.55rem;
+  bottom: 8.5rem;
   transition: transform 0.3s ease;
 }
 
@@ -247,11 +247,19 @@ a.custom-link {
   transition: transform 0.3s ease;
 }
 
+.top-svg1:hover{
+  scale: 1.05;
+}
+
 .top-svg2 {
   position: relative;
   top: -20rem;
   left: 33rem;
   transition: transform 0.3s ease;
+}
+
+.top-svg2:hover{
+  scale: 1.05;
 }
 
 .top-svg3 {
@@ -261,6 +269,10 @@ a.custom-link {
   transition: transform 0.3s ease;
 }
 
+.top-svg3:hover{
+  scale: 1.05;
+}
+
 .top-svg4 {
   position: relative;
   top: -20rem;
@@ -268,6 +280,9 @@ a.custom-link {
   width: 3.4rem;
   height: 3.4rem;
   transition: transform 0.3s ease;
+}
+.top-svg4:hover{
+  scale: 1.05;
 }
 
 .about-container {
@@ -426,7 +441,7 @@ a.custom-link {
 
 .projects-container {
   position: relative;
-  top: 5rem;
+  top: 10rem;
   left: -2rem;
   display: flex;
   flex-wrap: wrap;
@@ -506,7 +521,7 @@ a.custom-link {
   font-family: 'Lily Script One', cursive;
   position: absolute;
   color: white;
-  top: -4rem; 
+  top: -9.5rem; 
   left: 3rem; 
   font-size: 3rem; 
   transition: transform 0.3s ease;
@@ -519,4 +534,126 @@ a.custom-link {
   right: 3rem; 
   font-size: 3rem;
   opacity: 50%;
+}
+/* Media Queries */
+
+@media only screen and (max-width: 1024px) {
+  .rotating {
+    width: 10%;
+    height: 10%;
+  }
+
+  .loading-text {
+    font-size: 2.5rem;
+  }
+
+  .loading-info {
+    font-size: 1rem;
+  }
+
+  .skills-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  .skills-box,
+  .about-rectangle {
+    width: 80%;
+    margin: 0 auto 1.5rem auto;
+  }
+
+  .left-box, 
+  .right-box {
+    position: static;
+    text-align: center;
+  }
+
+  .left-half, 
+  .right-half {
+    width: 100%;
+    height: 50vh;
+  }
+
+  .about-image {
+    width: 15rem;
+    height: 30rem;
+  }
+
+  .about-sk, 
+  .about-about {
+    position: static;
+    text-align: center;
+    margin-top: 1rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .rotating {
+    width: 15%;
+    height: 15%;
+  }
+
+  .loading-text {
+    font-size: 2rem;
+  }
+
+  .skills-box,
+  .about-rectangle {
+    width: 90%;
+  }
+
+  .about-image {
+    width: 12rem;
+    height: 24rem;
+  }
+
+  .about-sk,
+  .about-about {
+    font-size: 2rem;
+  }
+
+  .left-half, 
+  .right-half {
+    height: 40vh;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .rotating {
+    width: 20%;
+    height: 20%;
+  }
+
+  .loading-text {
+    font-size: 1.5rem;
+  }
+
+  .loading-info {
+    font-size: 0.9rem;
+  }
+
+  .skills-container {
+    padding: 0.5rem;
+  }
+
+  .skills-box,
+  .about-rectangle {
+    width: 95%;
+  }
+
+  .about-image {
+    width: 10rem;
+    height: 20rem;
+  }
+
+  .about-sk,
+  .about-about {
+    font-size: 1.5rem;
+  }
+
+  .left-half, 
+  .right-half {
+    height: 35vh;
+  }
 }

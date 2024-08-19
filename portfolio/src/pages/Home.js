@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import '../index.css'; // Make sure you import the CSS file
+import '../index.css';
 
 function Home() {
   return (

@@ -1,5 +1,5 @@
 import React from 'react';
-import '../index.css'; // Make sure you import the CSS file
+import '../index.css';
 
 function Skills() {
   return (
