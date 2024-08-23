@@ -210,7 +210,7 @@ a.custom-link {
 
 .light-text {
   margin-left: 2rem;
-  color: aliceblue;
+  color: rgb(234, 239, 243);
   font-size: 1.4rem;
 }
 
@@ -535,125 +535,573 @@ a.custom-link {
   font-size: 3rem;
   opacity: 50%;
 }
-/* Media Queries */
 
-@media only screen and (max-width: 1024px) {
-  .rotating {
-    width: 10%;
-    height: 10%;
+@media only screen and (max-width: 426px) {
+
+* {
+  box-sizing: border-box;
+}  
+
+body {
+  display: flex;
+  background-color: #050400; 
+  margin: 0; 
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  flex-direction: column;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
   }
-
-  .loading-text {
-    font-size: 2.5rem;
-  }
-
-  .loading-info {
-    font-size: 1rem;
-  }
-
-  .skills-container {
-    flex-direction: column;
-    align-items: center;
-    padding: 1rem;
-  }
-
-  .skills-box,
-  .about-rectangle {
-    width: 80%;
-    margin: 0 auto 1.5rem auto;
-  }
-
-  .left-box, 
-  .right-box {
-    position: static;
-    text-align: center;
-  }
-
-  .left-half, 
-  .right-half {
-    width: 100%;
-    height: 50vh;
-  }
-
-  .about-image {
-    width: 15rem;
-    height: 30rem;
-  }
-
-  .about-sk, 
-  .about-about {
-    position: static;
-    text-align: center;
-    margin-top: 1rem;
+  to {
+    transform: rotate(360deg);
   }
 }
 
-@media only screen and (max-width: 768px) {
-  .rotating {
-    width: 15%;
-    height: 15%;
-  }
+.rotating {
+  animation: rotate 1.5s linear infinite;
+  position: relative;
+  top: 0rem;
+  left: 0rem;
+  transform: translateY(4rem);
+  cursor: pointer;
+  backface-visibility: hidden;
+  will-change: transform;
+  transform-origin: center;
+  width: 5%;
+  height: 5%;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
 
-  .loading-text {
-    font-size: 2rem;
-  }
+.rotating:hover {
+  animation: rotate 1s linear infinite;
+  transform: translateY(4rem) scale(1.2) rotateY(180deg);
+  transition: transform 0.2s ease;
+}
 
-  .skills-box,
-  .about-rectangle {
-    width: 90%;
-  }
+.loading-container {
+  position: relative;
+  top: 10rem;
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
 
-  .about-image {
-    width: 12rem;
-    height: 24rem;
-  }
+.loading-text {
+  font-family: 'Lily Script One', cursive;
+  position: relative;
+  color: aliceblue;
+  top: -31rem;
+  left: -8rem;
+  font-size: 1.5rem; 
+  margin-top: 20px; 
+  transition: transform 0.3s ease; 
+  z-index: 1;
+}
 
-  .about-sk,
-  .about-about {
-    font-size: 2rem;
-  }
+.loading-text:hover {
+  transform: scale(1.2);
+}
 
-  .left-half, 
-  .right-half {
-    height: 40vh;
+.loading-info {
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+  bottom: 2rem;
+  left: 0rem;
+  color: aliceblue;
+  font-size: 1rem; 
+  margin-top: 20px; 
+  cursor: pointer;
+}
+
+.bg-triangle3 {
+  position: relative;
+  top: -1rem;
+  left: 0rem;
+  size: 15rem;
+}
+
+.bg-triangle4 {
+  position: relative;
+  top: -2rem;
+  left: 0rem;
+  size: 20rem;
+}
+
+.home-container {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden; 
+}
+
+.left-half {
+  background-color: #392D2D;
+  height: 50%;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.right-half {
+  background-color: white;
+  height: 50vh; 
+  width: 100vw; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute; 
+  bottom: 0; 
+  left: 0;
+}
+
+.left-rectangle {
+  position: absolute;
+  left: 2rem;
+  top: 3.6rem;
+  border: 2px solid white;
+  width: 80%; 
+  height: 90%; 
+}
+
+.right-rectangle {
+  position: relative;
+  left: -3rem;
+  top: -1.1rem;
+  border: 2px solid #392D2D; 
+  width: 100%; 
+  height: 90%; 
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-family: Arial, sans-serif;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+a.custom-link {
+  font-family: 'Inknut Antiqua', serif;
+  font-size: 1rem;
+  text-decoration: none;
+  position: absolute;
+}
+
+.about-link {
+  color: aliceblue;
+  top: 9rem;
+  left: -1rem;
+  transform: rotate(-90deg);
+}
+
+.about-link:hover {
+  transform: rotate(-90deg) scale(1.5);
+}
+
+.skills-link {
+  color: aliceblue;
+  top: 0rem;
+  left: 7.5rem;
+  transform: rotate(90deg);
+  font-size: -1rem;
+  size: 1rem;
+}
+
+.skills-link:hover {
+  transform: scale(1.5);
+}
+
+.parent-container {
+  position: relative;
+  overflow: hidden; 
+  height: 100vh;
+}
+
+.projects-link {
+  color: #392D2D;
+  position: absolute; 
+  bottom: -10;
+  left: 13rem;
+  transform: rotate(90deg);
+  transform-origin: center; 
+  display: inline-block; 
+  transition: transform 0.3s ease; 
+}
+
+.projects-link:hover {
+  transform: rotate(90deg) scale(1.5); 
+}
+
+
+.resume-link {
+  position: relative;
+  left: -4rem;
+  top: 0rem;
+  transform: rotate(-90deg);
+  color: #392D2D;
+  bottom: 0rem;
+  left: 8rem;
+}
+
+.resume-link:hover{
+  transform: scale(1.5);
+}
+
+.bold-text1 {
+  color: aliceblue;
+  font-size: 1.5rem;
+  margin-left: 1rem;
+}
+
+.bold-text2 {
+  color: aliceblue;
+  font-size: 1.5rem;
+  margin-left: 1rem;
+}
+
+.light-text {
+  margin-left: 2rem;
+  color: rgb(234, 239, 243);
+  font-size: 1rem;
+}
+
+.rectangle-image {
+  position: relative;
+  height: 15rem;
+  left: 4rem;
+  bottom: 2rem;
+  transition: transform 0.3s ease;
+}
+
+.rectangle-image:hover {
+  transform: scale(1.1);
+}
+
+.text-home {
+  font-family: 'Lily Script One', cursive;
+  position: relative;
+  color: aliceblue;
+  top: -10rem;
+  left: -6rem;
+  font-size: 1rem; 
+  margin-top: 20px; 
+  transition: transform 0.3s ease;
+}
+
+.text-home:hover {
+  transform: scale(1.2);
+}
+
+.top-svg1 {
+  position: relative;
+  top: -9rem;
+  left: -2rem;
+  transition: transform 0.3s ease;
+  height: 2rem;
+}
+
+.top-svg1:hover{
+  scale: 1.05;
+}
+
+.top-svg2 {
+  position: relative;
+  top: -9rem;
+  left: 1rem;
+  transition: transform 0.3s ease;
+  height: 2rem;
+}
+
+.top-svg2:hover{
+  scale: 1.05;
+}
+
+.top-svg3 {
+  position: relative;
+  top: 9.8rem;
+  left: 7rem;
+  transition: transform 0.3s ease;
+  height: 2.4rem;
+}
+
+.top-svg3:hover{
+  scale: 1.05;
+}
+
+.top-svg4 {
+  position: relative;
+  top: 9.8rem;
+  left: 9rem;
+  width: 3.4rem;
+  height: 3.4rem;
+  transition: transform 0.3s ease;
+  height: 2rem;
+}
+.top-svg4:hover{
+  scale: 1.05;
+}
+
+.about-container {
+  background-color: #392D2D;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.about-rectangle {
+  position: relative;
+  left: -10rem;
+  border: 2px solid white;
+  padding: 2rem;
+  height: 26rem;
+  width: 45rem;
+  color: white;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+}
+
+.about-text {
+  font-family: Arial, sans-serif;
+  font-size: 1.2rem;
+}
+
+@keyframes figureEight {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(50px, 25px);
+  }
+  50% {
+    transform: translate(0, 50px) scale(1, 1); 
+  }
+  75% {
+    transform: translate(100px, 25px);
+  }
+  100% {
+    transform: translate(0, 0);
   }
 }
 
-@media only screen and (max-width: 425px) {
-  .rotating {
-    width: 20%;
-    height: 20%;
-  }
+.about-image {
+  position: absolute;
+  right: 10%;
+  width: 20rem; 
+  height: 40rem;
+  animation: figureEight 20s infinite ease-in-out; 
+}
 
-  .loading-text {
-    font-size: 1.5rem;
-  }
 
-  .loading-info {
-    font-size: 0.9rem;
-  }
+.about-sk {
+  font-family: 'Lily Script One', cursive;
+  position: relative;
+  color: aliceblue;
+  top: -22rem;
+  left: -15rem;
+  font-size: 3rem; 
+  margin-top: 20px; 
+  transition: transform 0.3s ease;
+}
 
-  .skills-container {
-    padding: 0.5rem;
-  }
+.about-sk:hover {
+  transform: scale(1.2);
+}
 
-  .skills-box,
-  .about-rectangle {
-    width: 95%;
-  }
+.about-about {
+  color: aliceblue;
+  position: relative;
+  top: -20rem;
+  right: -12rem;
+  font-size: 3rem;
+  opacity: 50%;
+}
 
-  .about-image {
-    width: 10rem;
-    height: 20rem;
-  }
+.skills-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  background-color: white;
+  height: 100vh;
+}
 
-  .about-sk,
-  .about-about {
-    font-size: 1.5rem;
-  }
+.skills-box {
+  width: 35%;
+  height: 50%;
+  padding: 2rem;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
-  .left-half, 
-  .right-half {
-    height: 35vh;
-  }
+.left-box {
+  position: relative;
+  top: 10rem;
+  left: -8rem;
+  background-color: white;
+}
+
+.left-box:hover {
+  background-color: #8c3b3b;
+  color: white;
+}
+
+.right-box {
+  position: relative;
+  top: 10rem;
+  left: -3rem;
+  background-color: white;
+}
+
+.right-box:hover{
+  background-color: #8c3b3b;
+  color: white;
+}
+
+.skills-heading1 {
+  font-family: 'Lily Script One', cursive;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  position: relative;
+  left: 5rem;
+  top: -2rem;
+}
+
+.skills-heading2 {
+  font-family: 'Lily Script One', cursive;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  position: relative;
+  left: 5rem;
+  top: 0rem;
+}
+
+.skills-text {
+  font-family: 'Inconsolata', monospace;
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.skills-sk {
+  font-family: 'Lily Script One', cursive;
+  position: relative;
+  color: black;
+  top: -3rem;
+  left: -1.5rem;
+  font-size: 3rem; 
+  margin-top: 20px; 
+  transition: transform 0.3s ease;
+}
+
+.projects-container {
+  position: relative;
+  top: 10rem;
+  left: -2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 2rem;
+}
+
+.rectangle {
+  background-color: #f4f4f4;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  width: 20rem;
+  height: 20rem;
+  margin: 1rem;
+  padding: 1rem;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.rectangle:hover {
+  transform: scale(1.2);
+}
+
+.image-holder {
+  width: 20rem;
+  height: 9rem;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+
+.project-image1 {
+  position: relative;
+  align-items: center;
+  top: 0rem;
+  left: 1rem;
+  width: 90%;
+  height: 100%;
+}
+
+.project-image2 {
+  position: relative;
+  top: 0rem;
+  left: 5rem;
+  width: 50%;
+}
+
+.project-desc h3 {
+  font-family: 'Lily Script One', cursive;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.project-desc p {
+  font-family: 'Imprima', sans-serif;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.project-link {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.project-link:hover {
+  text-decoration: underline;
+}
+
+.project-image3 {
+  position: relative;
+  top: 0rem;
+  left: 5rem;
+  width: 50%;
+}
+
+.projects-sk {
+  font-family: 'Lily Script One', cursive;
+  position: absolute;
+  color: white;
+  top: -9.5rem; 
+  left: 3rem; 
+  font-size: 3rem; 
+  transition: transform 0.3s ease;
+}
+
+.projects-projects {
+  color: white;
+  position: absolute; 
+  bottom: -6rem; 
+  right: 3rem; 
+  font-size: 3rem;
+  opacity: 50%;
+}
 }
