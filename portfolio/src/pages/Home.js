@@ -23,8 +23,9 @@ function Home() {
               className="top-svg2"
             />
           </a>
-        <Link to="/about" className="custom-link about-link">ABOUT</Link>
-        <Link to="/skills" className="custom-link skills-link">SKILLS</Link>
+          <Link to="/about" className="custom-link about-link">ABOUT</Link>
+          <Link to="/skills" className="custom-link skills-link">SKILLS</Link>
+
         <div className="left-rectangle">
           <div className='bold-text1'>
             Hi,

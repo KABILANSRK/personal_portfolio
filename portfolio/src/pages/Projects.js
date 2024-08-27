@@ -27,7 +27,7 @@ function Skills() {
             rel="noopener noreferrer"
             className="project-link"
           >
-            View on GitHub
+            GitHub
           </a>
         </div>
       </div>
@@ -49,7 +49,7 @@ function Skills() {
             rel="noopener noreferrer"
             className="project-link"
           >
-            View on GitHub
+            GitHub
           </a>
         </div>
       </div>
@@ -63,7 +63,7 @@ function Skills() {
           />
         </div>
         <div className="project-desc">
-          <h3>&nbsp;Multifunctional Telegram Bot</h3>
+          <h3>&nbsp;&nbsp;&nbsp;&emsp;&emsp;&nbsp;Telegram Bot</h3>
           <p>&emsp;A MultiFunctional Telegram Bot for multiple tasks...</p>
           <a 
             href="https://github.com/KABILANSRK/Multi-funtional-telegram-bot.git" 
@@ -71,7 +71,7 @@ function Skills() {
             rel="noopener noreferrer"
             className="project-link"
           >
-            View on GitHub
+            GitHub
           </a>
         </div>
       </div>

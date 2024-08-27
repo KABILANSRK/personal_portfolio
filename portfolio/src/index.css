@@ -536,7 +536,7 @@ a.custom-link {
   opacity: 50%;
 }
 
-@media only screen and (max-width: 426px) {
+@media only screen and (max-width: 768px) {
 
 * {
   box-sizing: border-box;
@@ -1105,3 +1105,1708 @@ a.custom-link {
   opacity: 50%;
 }
 }
+
+@media only screen and (max-width: 320px) {
+
+  * {
+    box-sizing: border-box;
+  }  
+  
+  body {
+    display: flex;
+    background-color: #050400; 
+    margin: 0; 
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    flex-direction: column;
+  }
+  
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .rotating {
+    animation: rotate 1.5s linear infinite;
+    position: relative;
+    top: 0rem;
+    left: 0rem;
+    transform: translateY(4rem);
+    cursor: pointer;
+    backface-visibility: hidden;
+    will-change: transform;
+    transform-origin: center;
+    width: 5%;
+    height: 5%;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .rotating:hover {
+    animation: rotate 1s linear infinite;
+    transform: translateY(4rem) scale(1.2) rotateY(180deg);
+    transition: transform 0.2s ease;
+  }
+  
+  .loading-container {
+    position: relative;
+    top: 10rem;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+  }
+  
+  .loading-text {
+    font-family: 'Lily Script One', cursive;
+    position: relative;
+    color: aliceblue;
+    top: -31rem;
+    left: -8rem;
+    font-size: 1.5rem; 
+    margin-top: 20px; 
+    transition: transform 0.3s ease; 
+    z-index: 1;
+  }
+  
+  .loading-text:hover {
+    transform: scale(1.2);
+  }
+  
+  .loading-info {
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    bottom: 2rem;
+    left: 0rem;
+    color: aliceblue;
+    font-size: 1rem; 
+    margin-top: 20px; 
+    cursor: pointer;
+  }
+  
+  .bg-triangle3 {
+    position: relative;
+    top: -1rem;
+    left: 0rem;
+    size: 15rem;
+  }
+  
+  .bg-triangle4 {
+    position: relative;
+    top: -2rem;
+    left: 0rem;
+    size: 20rem;
+  }
+  
+  .home-container {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden; 
+  }
+  
+  .left-half {
+    background-color: #392D2D;
+    height: 50%;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  
+  .right-half {
+    background-color: white;
+    height: 50vh; 
+    width: 100vw; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute; 
+    bottom: 0; 
+    left: 0;
+  }
+  
+  .left-rectangle {
+    position: absolute;
+    left: 2rem;
+    top: 3.6rem;
+    border: 2px solid white;
+    width: 80%; 
+    height: 90%; 
+  }
+  
+  .right-rectangle {
+    position: relative;
+    left: -3rem;
+    top: -1.1rem;
+    border: 2px solid #392D2D; 
+    width: 100%; 
+    height: 90%; 
+  }
+  
+  a {
+    color: inherit;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-family: Arial, sans-serif;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  a.custom-link {
+    font-family: 'Inknut Antiqua', serif;
+    font-size: 1rem;
+    text-decoration: none;
+    position: absolute;
+  }
+  
+  .about-link {
+    color: aliceblue;
+    top: 9rem;
+    left: -1rem;
+    transform: rotate(-90deg);
+  }
+  
+  .about-link:hover {
+    transform: rotate(-90deg) scale(1.5);
+  }
+  
+  .skills-link {
+    color: aliceblue;
+    top: 0rem;
+    left: 7.5rem;
+    transform: rotate(90deg);
+    font-size: -1rem;
+    size: 1rem;
+  }
+  
+  .skills-link:hover {
+    transform: scale(1.5);
+  }
+  
+  .parent-container {
+    position: relative;
+    overflow: hidden; 
+    height: 100vh;
+  }
+  
+  .projects-link {
+    color: #392D2D;
+    position: absolute; 
+    bottom: -10;
+    left: 13rem;
+    transform: rotate(90deg);
+    transform-origin: center; 
+    display: inline-block; 
+    transition: transform 0.3s ease; 
+  }
+  
+  .projects-link:hover {
+    transform: rotate(90deg) scale(1.5); 
+  }
+  
+  
+  .resume-link {
+    position: relative;
+    left: -4rem;
+    top: 0rem;
+    transform: rotate(-90deg);
+    color: #392D2D;
+    bottom: 0rem;
+    left: 8rem;
+  }
+  
+  .resume-link:hover{
+    transform: scale(1.5);
+  }
+  
+  .bold-text1 {
+    color: aliceblue;
+    font-size: 1.5rem;
+    margin-left: 1rem;
+  }
+  
+  .bold-text2 {
+    color: aliceblue;
+    font-size: 1.5rem;
+    margin-left: 1rem;
+  }
+  
+  .light-text {
+    margin-left: 2rem;
+    color: rgb(234, 239, 243);
+    font-size: 1rem;
+  }
+  
+  .rectangle-image {
+    position: relative;
+    height: 15rem;
+    left: 4rem;
+    bottom: 2rem;
+    transition: transform 0.3s ease;
+  }
+  
+  .rectangle-image:hover {
+    transform: scale(1.1);
+  }
+  
+  .text-home {
+    font-family: 'Lily Script One', cursive;
+    position: relative;
+    color: aliceblue;
+    top: -10rem;
+    left: -6rem;
+    font-size: 1rem; 
+    margin-top: 20px; 
+    transition: transform 0.3s ease;
+  }
+  
+  .text-home:hover {
+    transform: scale(1.2);
+  }
+  
+  .top-svg1 {
+    position: relative;
+    top: -9rem;
+    left: -2rem;
+    transition: transform 0.3s ease;
+    height: 2rem;
+  }
+  
+  .top-svg1:hover{
+    scale: 1.05;
+  }
+  
+  .top-svg2 {
+    position: relative;
+    top: -9rem;
+    left: 1rem;
+    transition: transform 0.3s ease;
+    height: 2rem;
+  }
+  
+  .top-svg2:hover{
+    scale: 1.05;
+  }
+  
+  .top-svg3 {
+    position: relative;
+    top: 9.8rem;
+    left: 7rem;
+    transition: transform 0.3s ease;
+    height: 2.4rem;
+  }
+  
+  .top-svg3:hover{
+    scale: 1.05;
+  }
+  
+  .top-svg4 {
+    position: relative;
+    top: 9.8rem;
+    left: 9rem;
+    width: 3.4rem;
+    height: 3.4rem;
+    transition: transform 0.3s ease;
+    height: 2rem;
+  }
+  .top-svg4:hover{
+    scale: 1.05;
+  }
+  
+  .about-container {
+    background-color: #392D2D;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  
+  .about-rectangle {
+    position: relative;
+    left: -10rem;
+    border: 2px solid white;
+    padding: 2rem;
+    height: 26rem;
+    width: 45rem;
+    color: white;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+  }
+  
+  .about-text {
+    font-family: Arial, sans-serif;
+    font-size: 1.2rem;
+  }
+  
+  @keyframes figureEight {
+    0% {
+      transform: translate(0, 0);
+    }
+    25% {
+      transform: translate(50px, 25px);
+    }
+    50% {
+      transform: translate(0, 50px) scale(1, 1); 
+    }
+    75% {
+      transform: translate(100px, 25px);
+    }
+    100% {
+      transform: translate(0, 0);
+    }
+  }
+  
+  .about-image {
+    position: absolute;
+    right: 10%;
+    width: 20rem; 
+    height: 40rem;
+    animation: figureEight 20s infinite ease-in-out; 
+  }
+  
+  
+  .about-sk {
+    font-family: 'Lily Script One', cursive;
+    position: relative;
+    color: aliceblue;
+    top: -22rem;
+    left: -15rem;
+    font-size: 3rem; 
+    margin-top: 20px; 
+    transition: transform 0.3s ease;
+  }
+  
+  .about-sk:hover {
+    transform: scale(1.2);
+  }
+  
+  .about-about {
+    color: aliceblue;
+    position: relative;
+    top: -20rem;
+    right: -12rem;
+    font-size: 3rem;
+    opacity: 50%;
+  }
+  
+  .skills-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    background-color: white;
+    height: 100vh;
+  }
+  
+  .skills-box {
+    width: 35%;
+    height: 50%;
+    padding: 2rem;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .left-box {
+    position: relative;
+    top: 10rem;
+    left: -8rem;
+    background-color: white;
+  }
+  
+  .left-box:hover {
+    background-color: #8c3b3b;
+    color: white;
+  }
+  
+  .right-box {
+    position: relative;
+    top: 10rem;
+    left: -3rem;
+    background-color: white;
+  }
+  
+  .right-box:hover{
+    background-color: #8c3b3b;
+    color: white;
+  }
+  
+  .skills-heading1 {
+    font-family: 'Lily Script One', cursive;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    position: relative;
+    left: 5rem;
+    top: -2rem;
+  }
+  
+  .skills-heading2 {
+    font-family: 'Lily Script One', cursive;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    position: relative;
+    left: 5rem;
+    top: 0rem;
+  }
+  
+  .skills-text {
+    font-family: 'Inconsolata', monospace;
+    font-size: 1.2rem;
+    line-height: 1.6;
+  }
+  
+  .skills-sk {
+    font-family: 'Lily Script One', cursive;
+    position: relative;
+    color: black;
+    top: -3rem;
+    left: -1.5rem;
+    font-size: 3rem; 
+    margin-top: 20px; 
+    transition: transform 0.3s ease;
+  }
+  
+  .projects-container {
+    position: relative;
+    top: 10rem;
+    left: -2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 2rem;
+  }
+  
+  .rectangle {
+    background-color: #f4f4f4;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    width: 20rem;
+    height: 20rem;
+    margin: 1rem;
+    padding: 1rem;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .rectangle:hover {
+    transform: scale(1.2);
+  }
+  
+  .image-holder {
+    width: 20rem;
+    height: 9rem;
+    overflow: hidden;
+    margin-bottom: 1rem;
+  }
+  
+  .project-image1 {
+    position: relative;
+    align-items: center;
+    top: 0rem;
+    left: 1rem;
+    width: 90%;
+    height: 100%;
+  }
+  
+  .project-image2 {
+    position: relative;
+    top: 0rem;
+    left: 5rem;
+    width: 50%;
+  }
+  
+  .project-desc h3 {
+    font-family: 'Lily Script One', cursive;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .project-desc p {
+    font-family: 'Imprima', sans-serif;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .project-link {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .project-link:hover {
+    text-decoration: underline;
+  }
+  
+  .project-image3 {
+    position: relative;
+    top: 0rem;
+    left: 5rem;
+    width: 50%;
+  }
+  
+  .projects-sk {
+    font-family: 'Lily Script One', cursive;
+    position: absolute;
+    color: white;
+    top: -9.5rem; 
+    left: 3rem; 
+    font-size: 3rem; 
+    transition: transform 0.3s ease;
+  }
+  
+  .projects-projects {
+    color: white;
+    position: absolute; 
+    bottom: -6rem; 
+    right: 3rem; 
+    font-size: 3rem;
+    opacity: 50%;
+  }
+  }
+  
+  @media only screen and (max-width: 1024px) {
+
+    * {
+      box-sizing: border-box;
+    }  
+    
+    body {
+      display: flex;
+      background-color: #050400; 
+      margin: 0; 
+      padding: 0;
+      width: 100vw;
+      height: 100vh;
+      overflow-x: hidden;
+      overflow-y: hidden;
+      flex-direction: column;
+    }
+    
+    @keyframes rotate {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+    
+    .rotating {
+      animation: rotate 1.5s linear infinite;
+      position: relative;
+      top: 0rem;
+      left: 0rem;
+      transform: translateY(4rem);
+      cursor: pointer;
+      backface-visibility: hidden;
+      will-change: transform;
+      transform-origin: center;
+      width: 5%;
+      height: 5%;
+      box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    }
+    
+    .rotating:hover {
+      animation: rotate 1s linear infinite;
+      transform: translateY(4rem) scale(1.2) rotateY(180deg);
+      transition: transform 0.2s ease;
+    }
+    
+    .loading-container {
+      position: relative;
+      top: 10rem;
+      display: flex;
+      flex-direction: column; 
+      justify-content: center;
+      align-items: center;
+      height: 50vh;
+    }
+    
+    .loading-text {
+      font-family: 'Lily Script One', cursive;
+      position: relative;
+      color: aliceblue;
+      top: -31rem;
+      left: -8rem;
+      font-size: 1.5rem; 
+      margin-top: 20px; 
+      transition: transform 0.3s ease; 
+      z-index: 1;
+    }
+    
+    .loading-text:hover {
+      transform: scale(1.2);
+    }
+    
+    .loading-info {
+      font-family: 'Poppins', sans-serif;
+      position: relative;
+      bottom: 2rem;
+      left: 0rem;
+      color: aliceblue;
+      font-size: 1rem; 
+      margin-top: 20px; 
+      cursor: pointer;
+    }
+    
+    .bg-triangle3 {
+      position: relative;
+      top: -1rem;
+      left: 0rem;
+      size: 15rem;
+    }
+    
+    .bg-triangle4 {
+      position: relative;
+      top: -2rem;
+      left: 0rem;
+      size: 20rem;
+    }
+    
+    .home-container {
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+      width: 100vw;
+      overflow: hidden; 
+    }
+    
+    .left-half {
+      background-color: #392D2D;
+      height: 50%;
+      width: 100vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+    
+    .right-half {
+      background-color: white;
+      height: 50vh; 
+      width: 100vw; 
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute; 
+      bottom: 0; 
+      left: 0;
+    }
+    
+    .left-rectangle {
+      position: absolute;
+      left: 2rem;
+      top: 3.6rem;
+      border: 2px solid white;
+      width: 80%; 
+      height: 90%; 
+    }
+    
+    .right-rectangle {
+      position: relative;
+      left: -3rem;
+      top: -1.1rem;
+      border: 2px solid #392D2D; 
+      width: 100%; 
+      height: 90%; 
+    }
+    
+    a {
+      color: inherit;
+      text-decoration: none;
+      font-size: 1.5rem;
+      font-family: Arial, sans-serif;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+    
+    a.custom-link {
+      font-family: 'Inknut Antiqua', serif;
+      font-size: 1rem;
+      text-decoration: none;
+      position: absolute;
+    }
+    
+    .about-link {
+      color: aliceblue;
+      top: 9rem;
+      left: -1rem;
+      transform: rotate(-90deg);
+    }
+    
+    .about-link:hover {
+      transform: rotate(-90deg) scale(1.5);
+    }
+    
+    .skills-link {
+      color: aliceblue;
+      top: 0rem;
+      left: 7.5rem;
+      transform: rotate(90deg);
+      font-size: -1rem;
+      size: 1rem;
+    }
+    
+    .skills-link:hover {
+      transform: scale(1.5);
+    }
+    
+    .parent-container {
+      position: relative;
+      overflow: hidden; 
+      height: 100vh;
+    }
+    
+    .projects-link {
+      color: #392D2D;
+      position: absolute; 
+      bottom: -10;
+      left: 13rem;
+      transform: rotate(90deg);
+      transform-origin: center; 
+      display: inline-block; 
+      transition: transform 0.3s ease; 
+    }
+    
+    .projects-link:hover {
+      transform: rotate(90deg) scale(1.5); 
+    }
+    
+    
+    .resume-link {
+      position: relative;
+      left: -4rem;
+      top: 0rem;
+      transform: rotate(-90deg);
+      color: #392D2D;
+      bottom: 0rem;
+      left: 8rem;
+    }
+    
+    .resume-link:hover{
+      transform: scale(1.5);
+    }
+    
+    .bold-text1 {
+      color: aliceblue;
+      font-size: 1.5rem;
+      margin-left: 1rem;
+    }
+    
+    .bold-text2 {
+      color: aliceblue;
+      font-size: 1.5rem;
+      margin-left: 1rem;
+    }
+    
+    .light-text {
+      margin-left: 2rem;
+      color: rgb(234, 239, 243);
+      font-size: 1rem;
+    }
+    
+    .rectangle-image {
+      position: relative;
+      height: 15rem;
+      left: 4rem;
+      bottom: 2rem;
+      transition: transform 0.3s ease;
+    }
+    
+    .rectangle-image:hover {
+      transform: scale(1.1);
+    }
+    
+    .text-home {
+      font-family: 'Lily Script One', cursive;
+      position: relative;
+      color: aliceblue;
+      top: -10rem;
+      left: -6rem;
+      font-size: 1rem; 
+      margin-top: 20px; 
+      transition: transform 0.3s ease;
+    }
+    
+    .text-home:hover {
+      transform: scale(1.2);
+    }
+    
+    .top-svg1 {
+      position: relative;
+      top: -9rem;
+      left: -2rem;
+      transition: transform 0.3s ease;
+      height: 2rem;
+    }
+    
+    .top-svg1:hover{
+      scale: 1.05;
+    }
+    
+    .top-svg2 {
+      position: relative;
+      top: -9rem;
+      left: 1rem;
+      transition: transform 0.3s ease;
+      height: 2rem;
+    }
+    
+    .top-svg2:hover{
+      scale: 1.05;
+    }
+    
+    .top-svg3 {
+      position: relative;
+      top: 9.8rem;
+      left: 7rem;
+      transition: transform 0.3s ease;
+      height: 2.4rem;
+    }
+    
+    .top-svg3:hover{
+      scale: 1.05;
+    }
+    
+    .top-svg4 {
+      position: relative;
+      top: 9.8rem;
+      left: 9rem;
+      width: 3.4rem;
+      height: 3.4rem;
+      transition: transform 0.3s ease;
+      height: 2rem;
+    }
+    .top-svg4:hover{
+      scale: 1.05;
+    }
+    
+    .about-container {
+      background-color: #392D2D;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+    
+    .about-rectangle {
+      position: relative;
+      left: -10rem;
+      border: 2px solid white;
+      padding: 2rem;
+      height: 26rem;
+      width: 45rem;
+      color: white;
+      font-size: 1.2rem;
+      line-height: 1.6rem;
+    }
+    
+    .about-text {
+      font-family: Arial, sans-serif;
+      font-size: 1.2rem;
+    }
+    
+    @keyframes figureEight {
+      0% {
+        transform: translate(0, 0);
+      }
+      25% {
+        transform: translate(50px, 25px);
+      }
+      50% {
+        transform: translate(0, 50px) scale(1, 1); 
+      }
+      75% {
+        transform: translate(100px, 25px);
+      }
+      100% {
+        transform: translate(0, 0);
+      }
+    }
+    
+    .about-image {
+      position: absolute;
+      right: 10%;
+      width: 20rem; 
+      height: 40rem;
+      animation: figureEight 20s infinite ease-in-out; 
+    }
+    
+    
+    .about-sk {
+      font-family: 'Lily Script One', cursive;
+      position: relative;
+      color: aliceblue;
+      top: -22rem;
+      left: -15rem;
+      font-size: 3rem; 
+      margin-top: 20px; 
+      transition: transform 0.3s ease;
+    }
+    
+    .about-sk:hover {
+      transform: scale(1.2);
+    }
+    
+    .about-about {
+      color: aliceblue;
+      position: relative;
+      top: -20rem;
+      right: -12rem;
+      font-size: 3rem;
+      opacity: 50%;
+    }
+    
+    .skills-container {
+      display: flex;
+      justify-content: space-between;
+      padding: 2rem;
+      background-color: white;
+      height: 100vh;
+    }
+    
+    .skills-box {
+      width: 35%;
+      height: 50%;
+      padding: 2rem;
+      border: 2px solid black;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    
+    .left-box {
+      position: relative;
+      top: 10rem;
+      left: -8rem;
+      background-color: white;
+    }
+    
+    .left-box:hover {
+      background-color: #8c3b3b;
+      color: white;
+    }
+    
+    .right-box {
+      position: relative;
+      top: 10rem;
+      left: -3rem;
+      background-color: white;
+    }
+    
+    .right-box:hover{
+      background-color: #8c3b3b;
+      color: white;
+    }
+    
+    .skills-heading1 {
+      font-family: 'Lily Script One', cursive;
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      position: relative;
+      left: 5rem;
+      top: -2rem;
+    }
+    
+    .skills-heading2 {
+      font-family: 'Lily Script One', cursive;
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      position: relative;
+      left: 5rem;
+      top: 0rem;
+    }
+    
+    .skills-text {
+      font-family: 'Inconsolata', monospace;
+      font-size: 1.2rem;
+      line-height: 1.6;
+    }
+    
+    .skills-sk {
+      font-family: 'Lily Script One', cursive;
+      position: relative;
+      color: black;
+      top: -3rem;
+      left: -1.5rem;
+      font-size: 3rem; 
+      margin-top: 20px; 
+      transition: transform 0.3s ease;
+    }
+    
+    .projects-container {
+      position: relative;
+      top: 10rem;
+      left: -2rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      padding: 2rem;
+    }
+    
+    .rectangle {
+      background-color: #f4f4f4;
+      border: 2px solid #ccc;
+      border-radius: 10px;
+      width: 20rem;
+      height: 20rem;
+      margin: 1rem;
+      padding: 1rem;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+    
+    .rectangle:hover {
+      transform: scale(1.2);
+    }
+    
+    .image-holder {
+      width: 20rem;
+      height: 9rem;
+      overflow: hidden;
+      margin-bottom: 1rem;
+    }
+    
+    .project-image1 {
+      position: relative;
+      align-items: center;
+      top: 0rem;
+      left: 1rem;
+      width: 90%;
+      height: 100%;
+    }
+    
+    .project-image2 {
+      position: relative;
+      top: 0rem;
+      left: 5rem;
+      width: 50%;
+    }
+    
+    .project-desc h3 {
+      font-family: 'Lily Script One', cursive;
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+    
+    .project-desc p {
+      font-family: 'Imprima', sans-serif;
+      font-size: 1rem;
+      margin-bottom: 1rem;
+    }
+    
+    .project-link {
+      color: #007bff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    
+    .project-link:hover {
+      text-decoration: underline;
+    }
+    
+    .project-image3 {
+      position: relative;
+      top: 0rem;
+      left: 5rem;
+      width: 50%;
+    }
+    
+    .projects-sk {
+      font-family: 'Lily Script One', cursive;
+      position: absolute;
+      color: white;
+      top: -9.5rem; 
+      left: 3rem; 
+      font-size: 3rem; 
+      transition: transform 0.3s ease;
+    }
+    
+    .projects-projects {
+      color: white;
+      position: absolute; 
+      bottom: -6rem; 
+      right: 3rem; 
+      font-size: 3rem;
+      opacity: 50%;
+    }
+    }
+    
+@media only screen and (max-width: 375px) {
+
+    * {
+      box-sizing: border-box;
+    }  
+    
+    body {
+      display: flex;
+      background-color: #050400; 
+      margin: 0; 
+      padding: 0;
+      width: 100vw;
+      height: 100vh;
+      overflow-x: hidden;
+      overflow-y: hidden;
+      flex-direction: column;
+    }
+    
+    @keyframes rotate {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+    
+    .rotating {
+      animation: rotate 1.5s linear infinite;
+      position: relative;
+      top: 0rem;
+      left: 0rem;
+      transform: translateY(4rem);
+      cursor: pointer;
+      backface-visibility: hidden;
+      will-change: transform;
+      transform-origin: center;
+      width: 5%;
+      height: 5%;
+      box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    }
+    
+    .rotating:hover {
+      animation: rotate 1s linear infinite;
+      transform: translateY(4rem) scale(1.2) rotateY(180deg);
+      transition: transform 0.2s ease;
+    }
+    
+    .loading-container {
+      position: relative;
+      top: 8rem;
+      display: flex;
+      flex-direction: column; 
+      justify-content: center;
+      align-items: center;
+      height: 50vh;
+    }
+    
+    .loading-text {
+      font-family: 'Lily Script One', cursive;
+      position: relative;
+      color: aliceblue;
+      top: -31rem;
+      left: -8rem;
+      font-size: 1.5rem; 
+      margin-top: 20px; 
+      transition: transform 0.3s ease; 
+      z-index: 1;
+    }
+    
+    .loading-text:hover {
+      transform: scale(1.2);
+    }
+    
+    .loading-info {
+      font-family: 'Poppins', sans-serif;
+      position: relative;
+      bottom: 2rem;
+      left: 0rem;
+      color: aliceblue;
+      font-size: 1rem; 
+      margin-top: 20px; 
+      cursor: pointer;
+    }
+    
+    .bg-triangle3 {
+      position: relative;
+      top: -1rem;
+      left: 0rem;
+      size: 15rem;
+    }
+    
+    .bg-triangle4 {
+      position: relative;
+      top: -2rem;
+      left: 0rem;
+      size: 20rem;
+    }
+    
+    .home-container {
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+      width: 100vw;
+      overflow: hidden; 
+    }
+    
+    .left-half {
+      background-color: #392D2D;
+      height: 50%;
+      width: 100vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+    
+    .right-half {
+      background-color: white;
+      height: 50vh; 
+      width: 100vw; 
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute; 
+      bottom: 0; 
+      left: 0;
+      overflow: hidden;
+    }
+    
+    .left-rectangle {
+      position: absolute;
+      left: 1.5rem;
+      top: 3.6rem;
+      border: 2px solid white;
+      width: 80%; 
+      height: 90%; 
+    }
+    
+    .right-rectangle {
+      position: relative;
+      left: -4rem;
+      top: -2.87rem;
+      border: 2px solid #392D2D; 
+      width: 100%; 
+      height: 80%; 
+    }
+    
+    a {
+      color: inherit;
+      text-decoration: none;
+      font-size: 1.5rem;
+      font-family: Arial, sans-serif;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+    
+    a.custom-link {
+      font-family: 'Inknut Antiqua', serif;
+      font-size: 1rem;
+      text-decoration: none;
+      position: absolute;
+    }
+    
+    .about-link {
+      color: aliceblue;
+      top: 12.3rem;
+      left: -2rem;
+      transform: rotate(-90deg);
+      z-index: 10;
+      padding: 5px 10px;
+    }
+
+    .skills-link {
+      color: aliceblue;
+      top: 0rem;
+      left: 6.5rem;
+      transform: rotate(90deg);
+      font-size: -1rem;
+      size: 1rem;
+      z-index: 9;
+    } 
+
+    .parent-container {
+      position: relative;
+      overflow: hidden; 
+      height: 100vh;
+    }
+    
+    .projects-link {
+      color: #392D2D;
+      position: absolute; 
+      top: 16rem;
+      left: 18rem;
+      transform: rotate(90deg);
+      transform-origin: center; 
+      display: inline-block; 
+      transition: transform 0.3s ease; 
+    }    
+    
+    .resume-link {
+      z-index: 100;
+      position: relative;
+      left: 1rem;
+      top: 7rem;
+      transform: rotate(-90deg);
+      color: #392D2D;
+      left: 7rem;
+    }
+    
+    .bold-text1 {
+      color: aliceblue;
+      font-size: 1.5rem;
+      margin-left: 1rem;
+      margin-top: 2.5rem;
+    }
+    
+    .bold-text2 {
+      color: aliceblue;
+      font-size: 1.5rem;
+      margin-left: 1rem;
+    }
+    
+    .light-text {
+      margin-left: 2rem;
+      color: rgb(234, 239, 243);
+      font-size: 1rem;
+    }
+    
+    .rectangle-image {
+      position: relative;
+      height: 15rem;
+      left: 4rem;
+      top: 2rem;
+      transition: transform 0.3s ease;
+    }
+    
+    .rectangle-image:hover {
+      transform: scale(1.1);
+    }
+    
+    .text-home {
+      font-family: 'Lily Script One', cursive;
+      position: relative;
+      color: aliceblue;
+      top: -12.5rem;
+      left: -7.5rem;
+      font-size: 1rem; 
+      margin-top: 20px; 
+      transition: transform 0.3s ease;
+    }
+    
+    .text-home:hover {
+      transform: scale(1.2);
+    }
+    
+    .top-svg1 {
+      position: relative;
+      top: -11.5rem;
+      left: -2rem;
+      transition: transform 0.3s ease;
+      height: 2rem;
+    }
+    
+    .top-svg2 {
+      position: relative;
+      top: -11.5rem;
+      left: 1rem;
+      transition: transform 0.3s ease;
+      height: 2rem;
+    }
+    
+    .top-svg3 {
+      position: relative;
+      top: 9.3rem;
+      left: 7rem;
+      transition: transform 0.3s ease;
+      height: 2.4rem;
+    }
+    
+    .top-svg4 {
+      position: relative;
+      top: 9.3rem;
+      left: 9rem;
+      width: 3.4rem;
+      height: 3.4rem;
+      transition: transform 0.3s ease;
+      height: 2rem;
+    }
+
+    .about-container {
+      display: flex;
+      background-color: #050400;
+      margin: 0;
+      padding: 0;
+      width: 100vw;
+      height: 100vh;
+      overflow-x: hidden;
+      overflow-y: hidden;
+      flex-direction: column;
+      scrollbar-width: none;
+      display: block;
+      unicode-bidi: isolate;
+    }
+    
+    .about-rectangle {
+      position: relative;
+      left: 3rem;
+      top: 2rem;
+      border: 2px solid white;
+      height: 80vh;
+      width: 70vw;
+      color: white;
+      font-size: 1rem;
+      line-height: 1.3rem;
+    }
+    
+    .about-text {
+      position: relative;
+      top: -2rem;
+      font-family: Arial, sans-serif;
+      font-size: 1rem;
+    }
+    
+    @keyframes figureEight {
+      0% {
+        transform: translate(0, 0);
+      }
+      25% {
+        transform: translate(50px, 25px);
+      }
+      50% {
+        transform: translate(0, 50px) scale(1, 1); 
+      }
+      75% {
+        transform: translate(100px, 25px);
+      }
+      100% {
+        transform: translate(0, 0);
+      }
+    }
+    
+    .about-image {
+      position: relative;
+      top: -45rem;
+      left: 14rem;
+      width: 4rem; 
+      height: 8rem;
+      animation: figureEight 20s infinite ease-in-out; 
+      z-index: 0;
+    }
+    
+    
+    .about-sk {
+      font-family: 'Lily Script One', cursive;
+      position: relative;
+      color: aliceblue;
+      top: 0rem;
+      left: 1rem;
+      font-size: 1rem; 
+      transition: transform 0.3s ease;
+    }
+    
+    .about-about {
+      color: aliceblue;
+      position: relative;
+      top: -54rem;
+      right: -12rem;
+      font-size: 3rem;
+      opacity: 50%;
+    }
+    
+    .skills-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 2rem;
+      background-color: white;
+      height: 100vh;
+    }
+    
+    .skills-box {
+      width: 50%;
+      height: 100%;
+      padding: 2rem;
+      border: 2px solid black;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    
+    .left-box {
+      position: relative;
+      height: 45%;
+      width: 90%;
+      top: -3rem;
+      left: 0rem;
+      background-color: white;
+    }
+    
+    .left-box:hover {
+      background-color: #8c3b3b;
+      color: white;
+    }
+    
+    .right-box {
+      position: relative;
+      height: 55%;
+      width: 90%;
+      top: -2rem;
+      left: 0rem;
+      background-color: white;
+    }
+    
+    .right-box:hover{
+      background-color: #8c3b3b;
+      color: white;
+    }
+    
+    .skills-heading1 {
+      font-family: 'Lily Script One', cursive;
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      position: relative;
+      left: 0rem;
+      top: 0rem;
+    }
+    
+    .skills-heading2 {
+      font-family: 'Lily Script One', cursive;
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      position: relative;
+      left: 0rem;
+      top: 1rem;
+    }
+    
+    .skills-text {
+      font-family: 'Inconsolata', monospace;
+      font-size: 1rem;
+      line-height: 1.6;
+      top: -1rem;
+    }
+    
+    .skills-sk {
+      font-family: 'Lily Script One', cursive;
+      position: relative;
+      color: black;
+      top: -3rem;
+      left: -1.5rem;
+      font-size: 1rem; 
+      margin-top: 20px; 
+      transition: transform 0.3s ease;
+    }
+    
+    .projects-container {
+      position: relative;
+      top: 0rem;
+      left: -2rem;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      padding: 2rem;
+      height: 80vh;
+      overflow-y: auto;
+    }
+    
+    .rectangle {
+      background-color: #f4f4f4;
+      border: 2px solid #ccc;
+      border-radius: 10px;
+      width: 20rem;
+      height: 20rem;
+      margin: 1.7rem;
+      padding: 1rem;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+    
+    .rectangle:hover {
+      transform: scale(1.2);
+    }
+    
+    .image-holder {
+      width: 20rem;
+      height: 9rem;
+      overflow: hidden;
+      margin-bottom: 1rem;
+    }
+    
+    .project-image1 {
+      position: relative;
+      align-items: center;
+      top: 0rem;
+      left: 0rem;
+      border-radius: 1rem;
+      width: 90%;
+      height: 100%;
+    }
+    
+    .project-image2 {
+      position: relative;
+      top: 0rem;
+      left: 5rem;
+      width: 50%;
+      border-radius: 1rem;
+    }
+    
+    .project-desc h3 {
+      font-family: 'Lily Script One', cursive;
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+    
+    .project-desc p {
+      font-family: 'Imprima', sans-serif;
+      font-size: 1rem;
+      margin-bottom: 1rem;
+    }
+    
+    .project-link {
+      color: #007bff;
+      text-decoration: none;
+      font-weight: bold;
+      position: relative;
+      left: 6rem;
+    }
+    
+    .project-link:hover {
+      text-decoration: underline;
+    }
+    
+    .project-image3 {
+      position: relative;
+      top: 0rem;
+      left: -1rem;
+      border-radius: 1rem;
+      left: 5rem;
+      width: 50%;
+    }
+    
+    .projects-sk {
+      font-family: 'Lily Script One', cursive;
+      position: fixed;
+      color: white;
+      top: 1rem; 
+      left: 1rem; 
+      font-size: 1rem; 
+      transition: transform 0.3s ease;
+    }
+    
+    .projects-projects {
+      color: white;
+      position: fixed; 
+      bottom: 8rem; 
+      right: 4rem; 
+      font-size: 3rem;
+      opacity: 50%;
+      z-index: 1;
+    }
+    }
+    
