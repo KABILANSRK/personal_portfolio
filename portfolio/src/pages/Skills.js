@@ -12,7 +12,7 @@ function Skills() {
         <p className="skills-text">
           I enjoy writing clean code and creating useful products.<br /><br />
           I like to code in:<br />
-          &emsp;&emsp;&emsp;Python, Javascript, Node, C, MongoDB.<br /><br />
+          &emsp;&emsp;&emsp;Python, Javascript, C, MongoDB.<br /><br />
           Tools:<br />
           &emsp;&emsp;&emsp;VScode, Github.
         </p>
